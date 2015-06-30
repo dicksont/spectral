@@ -1,0 +1,40 @@
+{
+  "name": "spectral",
+  "version": "0.0.0",
+  "description": "Spectral is a Node-based HTTP/HTTPS proxy server and inspector for the commandline",
+  "main": "bin/spectral.js",
+  "bin": {
+    "spectral": "client.js"
+  },
+  "dependencies": {
+    "moment": "^2.10.3",
+    "extend": "^2.0.1",
+    "string-etc": "^0.2.0",
+    "chalk": "^1.0.0",
+    "commander": "^2.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dicksont/spectral.git"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "proxy",
+    "inspect",
+    "inspector",
+    "traffic",
+    "fiddler",
+    "charles"
+  ],
+  "author": "Dickson Tam <dicksont650@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dicksont/spectral/issues"
+  },
+  "homepage": "https://github.com/dicksont/spectral#readme"
+}
