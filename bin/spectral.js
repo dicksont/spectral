@@ -34,16 +34,11 @@ program
   .command('proxy <target-hostname-port>')
   .option('-P, --port <port>', 'local port to bind to')
   .action(function(target, opts) {
-    var target = target.split(':');
-    var targetHost = target[0] || 'localhost';
-    var targetPort = target[1] || 8080;
-
     var proxy = require('../lib/proxy.js');
 
     proxy.createServer({
       port: opts.port || 5050,
-      targetPort: targetPort,
-      targetHost: targetHost
+      target: target
     });
   });
 
