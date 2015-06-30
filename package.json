@@ -7,7 +7,7 @@
     "spectral": "client.js"
   },
   "dependencies": {
-    "string-etc": "~0.2.0",
+    "string-etc": "~0.3.0",
     "chalk": "^1.0.0",
     "commander": "^2.8.1"
   },
