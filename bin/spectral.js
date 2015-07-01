@@ -36,10 +36,10 @@ program
   .action(function(target, opts) {
     var proxy = require('../lib/proxy.js');
 
-    proxy.createServer({
-      port: opts.port || 5050,
-      target: target
-    });
+    opts = opts || {}
+    opts.port = opts.port || 5050;
+    
+    proxy.createServer(opts);
   });
 
 
