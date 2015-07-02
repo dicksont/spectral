@@ -33,12 +33,13 @@ var logger = require('../lib/logger.js');
 program
   .command('proxy [target-hostname-port]')
   .option('-P, --port <port>', 'local port to bind to')
+  .option('-H, --hostname <hostname>', 'only bind proxy requests coming in on the interface associated with this hostname')
   .action(function(target, opts) {
     var proxy = require('../lib/proxy.js');
 
     opts = opts || {}
     opts.port = opts.port || 5050;
-    
+
     if (target) {
       opts.target = target;
     }
