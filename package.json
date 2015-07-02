@@ -4,7 +4,7 @@
   "description": "Spectral is a Node-based HTTP/HTTPS proxy server and inspector for the commandline",
   "main": "bin/spectral.js",
   "bin": {
-    "spectral": "client.js"
+    "spectral": "bin/spectral.js"
   },
   "dependencies": {
     "string-etc": "~0.3.0",
