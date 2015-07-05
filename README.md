@@ -2,6 +2,7 @@ Spectral is a Node-based HTTP/HTTPS proxy server and inspector for the commandli
 
 ## License
 Copyright (c) 2015, Dickson Tam
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
